@@ -2,6 +2,13 @@
 Para usar data binding de um atributo vc envolve com conchetes
 -->
 <!--usando o selector do component-->
-<af-photo url="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sultan_the_Barbary_Lion.jpg/440px-Sultan_the_Barbary_Lion.jpg" description="Leão"></af-photo>
-<af-photo url="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Lioness_Etosha_NP.jpg/500px-Lioness_Etosha_NP.jpg" description="Leoa"></af-photo>
+
+<!--Diretiva *ngForFunciona como um foreach do C#
+coloca se data binding[] para pegar o valor da expressão pq senão vai reconhecer como fosse uma string
+-->
+<af-photo
+          *ngFor="let photo of photos"
+          [url]="photo.url"
+          [description]="photo.description">
+</af-photo>
 
