@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 //Component é um objeto javaScript
 @Component({
@@ -8,6 +8,8 @@ import { Component } from "@angular/core";
 })
 
 export class PhotoComponent {
-  description = 'Leão';
-  url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sultan_the_Barbary_Lion.jpg/440px-Sultan_the_Barbary_Lion.jpg';
+
+  //@Input() Inbound properties aceitam receber um valor através da forma declarativa do documento
+  @Input() description = '';
+  @Input() url = '';
 }
