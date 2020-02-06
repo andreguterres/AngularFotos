@@ -1,13 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\e2e",
-    "\\e2e\\src",
     "\\src",
     "\\src\\app",
     "\\src\\app\\photos",
     "\\src\\app\\photos\\photo"
   ],
-  "SelectedNode": "\\src\\app\\photos\\photos.module.ts",
   "PreviewInSolutionExplorer": false
 }
